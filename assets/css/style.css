@@ -1,0 +1,248 @@
+﻿html,
+body {
+    width: 100%;
+    height: 100%;
+    background: #e8e5e5;
+    color: #5b5757;
+}
+
+.center {
+    max-width: 1550px;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+.m-50 {
+    margin-top: 50px;
+}
+
+.shape {
+    animation: fadein 4s;
+    -moz-animation: fadein 4s;
+    /* Firefox */
+    -webkit-animation: fadein 4s;
+    /* Safari and Chrome */
+    -o-animation: fadein 4s;
+    /* Opera */
+}
+
+.left {
+    vertical-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 25px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* FLEX */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 1550px;
+}
+
+header {
+    padding-top: 20px;
+}
+
+.center,
+footer,
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 250px;
+}
+
+.nav li {
+    display: table-cell;
+    position: relative;
+}
+
+.nav li a {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #5b5757;
+}
+
+.nav li a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #5b5757;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.nav li a:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+/*******/
+.butons a {
+    font-size: 30px;
+    color: #a4a4a4;
+    margin-left: 20px;
+}
+
+.butons a:hover {
+    font-size: 30px;
+    color: #5b5757;
+    text-decoration: none;
+}
+
+.variations {
+    display: block;
+    padding-bottom: 40px;
+}
+
+span {
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 35px;
+    vertical-align: top;
+}
+
+.square {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 10px;
+    background: #c3c2c0;
+    margin-left: 20px;
+}
+
+.square.black {
+    background: #3b3b3b;
+}
+
+.variations a:hover {
+    text-decoration: none;
+}
+
+.backdiv {
+    position: absolute;
+    height: 120px;
+    width: 100%;
+    background: url('./../img/featback.jpg') no-repeat bottom right fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    bottom: 0;
+    right: calc(100% - 500px);
+    z-index: 0;
+}
+
+.features a {
+    font-size: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 40px;
+    z-index: 2;
+}
+
+.features a:hover {
+    text-decoration: none;
+}
+
+.features i {
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
